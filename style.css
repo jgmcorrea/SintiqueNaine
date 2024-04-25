@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+:root {
+    --cor0: black;
+    --cor1: white;
+    --cor2: rgb(201, 172, 5);
+
+    --fonte-padrao: "Libre Baskerville", serif;
+    --fonte-titulo: "Playfair Display SC", serif;
+    --fonte-subtitulo: "Oswald", sans-serif;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+ background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+header > img {
+    width: 30%;
+}
+
+header > h2 {
+    font-family: var(--fonte-subtitulo);
+    color: var(--cor2);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    background-image: url('imagens/fundo.png');
+        background-size: cover; /* Para cobrir todo o fundo */
+        background-position: center; /* Centralizar a imagem */
+    color: var(--cor1);
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    padding: 30px 0px;
+    color: var(--cor2);
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em; /* Espaçamento entre linhas */
+    font-size: 1.1em;
+}
+
+main .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+main .coluna {
+    box-sizing: border-box;
+}
+
+main .coluna-esquerda1 {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+main .coluna-direita1 {
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+main .coluna-esquerda2 {
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+main .coluna-direita2 {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    padding-bottom: 40px;
+}
+li {
+    text-decoration: none;
+    line-height: 1.5em; /* Espaçamento entre linhas */
+    text-indent: 30px;
+    list-style-type: '\2714\00A0\00A0\00A0';
+    list-style-position: inside;
+    font-size: 1.1em;
+    font-family: var(--fonte-padrao);
+}
+
+footer {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    padding-top: 10px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer .container {
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Alinha os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha quando não couberem mais */
+}
+
+footer .image-wrapper {
+    flex: 1; /* Faz com que cada imagem tenha uma proporção igual de espaço */
+    margin: 5px; /* Adiciona um pequeno espaçamento entre as imagens */
+}
+
+footer .image-wrapper img {
+    max-width: 100%; /* Garante que a largura máxima da imagem seja 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 100px;
+}
