@@ -12,6 +12,7 @@
     --fonte-titulo: "Playfair Display SC", serif;;
     --fonte-subtitulo: "Oswald", sans-serif;
     --fonte-texto: "Montserrat";
+    --fonte-especial: "Hurricane", cursive;
 }
 * {
     padding: 0px;
@@ -95,6 +96,12 @@ main #titulo {
     color: var(--cor2);
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
+}
+
+span {
+    font-size: 2em;
+    font-family: var(--fonte-titulo);
 }
 
 main img {
