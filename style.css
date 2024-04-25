@@ -20,7 +20,8 @@
 }
 
 body {
-    background-image: url('imagens/fundo.png');
+    /* background-image: url('imagens/fundo.png'); */
+    background-color: var(--cor0);
     background-size: cover;
     background-position: center;
     color: var(--cor1);
@@ -38,7 +39,10 @@ header > img {
 header > h2 {
     font-family: var(--fonte-texto);
     color: var(--cor2);
-    font-weight: lighter;
+    /* font-weight: lighter; */
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 2em;
 }
 
 main {
@@ -49,16 +53,22 @@ main {
     color: var(--cor1);
 }
 
-main h2 {
+main h1 {
     font-family: var(--fonte-titulo);
     text-align: center;
-    padding: 30px 0px 0px 0px;
-    color: var(--cor2);
+    color: var(--cor0);
+    margin: 30px 0px;
+    padding: 10px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    font-size: 3em;
 }
 
-main h3 {
-    padding-top: 30px;
-    color: var(--cor2);
+main .degrade {
+    padding-top: 0px;
+    margin: 30px 0px;
+    color: var(--cor0);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
 }
 main p {
     font-family: var(--fonte-texto);
@@ -97,8 +107,18 @@ main #titulo {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    background-color: var(--cor0);
 }
 
+ul > li {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
 span {
     font-size: 2em;
     font-family: var(--fonte-titulo);
@@ -109,17 +129,32 @@ main img {
     display: block;
     margin: auto;
 }
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    border-color: var(--cor2);
+    border: 2px;
+    margin-bottom: 30px;
+    border-style: solid;
+}
 
-li {
-    text-decoration: none;
-    line-height: 1.5em; /* Espaçamento entre linhas */
-    
-    list-style-type: '\2714\00A0\00A0\00A0';
+aside > h1 {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /* Código foi pego no emojipedia, somente os números. As barras depois é para dar espaço duas vezes */
     list-style-position: inside;
+    columns: 2;
+    line-height: 1.5em; /* Espaçamento entre linhas */
     font-family: var(--fonte-texto);
     font-size: 1.1em;
-    text-align: justify;
     font-weight: lighter;
+    color: var(--cor1);
 }
 
 a.externo::after {
