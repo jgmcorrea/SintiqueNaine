@@ -102,10 +102,8 @@ button a {
     align-items: center;
     height: 100%;
 }
-main #titulo {
+main .titulo {
     color: var(--cor2);
-    padding-top: 30px;
-    padding-bottom: 30px;
     text-align: center;
     background-color: var(--cor0);
 }
@@ -155,6 +153,15 @@ aside > ul {
     font-size: 1.1em;
     font-weight: lighter;
     color: var(--cor1);
+}
+
+aside > p {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 10px;
+    margin: 0px -10px -10px -10px;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: normal;
 }
 
 a.externo::after {
