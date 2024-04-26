@@ -192,3 +192,14 @@ footer .image-wrapper img {
     height: auto; /* Mantém a proporção da imagem */
     width: 100px;
 }
+
+footer a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer p {
+    color: var(--cor2);
+    font-family: var(--fonte-texto);
+    font-size: 0.7em;
+}
