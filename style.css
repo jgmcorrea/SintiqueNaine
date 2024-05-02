@@ -6,7 +6,7 @@
 :root {
     --cor0: black;
     --cor1: white;
-    --cor2: rgb(201, 172, 5);
+    --cor2: #E1B346;
 
     --fonte-padrao: "Libre Baskerville", serif;
     --fonte-titulo: "Playfair Display SC", serif;;
@@ -32,18 +32,21 @@ header {
     padding: 40px 0px;
 }
 
-header > img {
+header img {
     width: 30%;
 }
 
-header > h2 {
+header h2 {
     font-family: var(--fonte-texto);
     color: var(--cor2);
-    /* font-weight: lighter; */
+    font-weight: lighter;
     font-style: italic;
-    margin-top: 30px;
     font-size: 2em;
 }
+@media screen and (max-width: 600px) {
+    header h2 {
+        font-size: 3vw;
+    }}
 
 main {
     min-width: 300px;
@@ -57,18 +60,20 @@ main h1 {
     font-family: var(--fonte-titulo);
     text-align: center;
     color: var(--cor0);
-    margin: 30px 0px;
     padding: 10px;
     background-color: var(--cor2);
     border-radius: 10px;
     font-size: 2em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     main h1 {
         font-size: 3vw;
     }}
 
+main .logori {
+    margin-top: 0px;
+}
 main .degrade {
     padding-top: 0px;
     margin: 30px 0px;
@@ -111,11 +116,6 @@ button a {
     align-items: center;
     height: 100%;
 }
-main .titulo {
-    color: var(--cor2);
-    text-align: center;
-    background-color: var(--cor0);
-}
 
 ul > li {
     list-style-type: '\2714\00A0\00A0';
@@ -132,18 +132,10 @@ span {
 }
 
 main img {
-    width: 50%;
-    max-width: 1000px;
+    width: 30%;
     display: block;
-    margin: 0 auto;
-    height: auto;
+    margin: auto; 
 }
-
-@media screen and (max-width: 1000px) {
-    main img {
-        width: 500px;
-        max-width: none;
-    }}
 
 aside {
     background-color: var(--cor0);
