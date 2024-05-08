@@ -7,6 +7,7 @@
     --cor0: black;
     --cor1: white;
     --cor2: #E1B346;
+    --cor3: #d7be84;
 
     --fonte-padrao: "Libre Baskerville", serif;
     --fonte-titulo: "Playfair Display SC", serif;;
@@ -33,7 +34,7 @@ header {
 }
 
 header img {
-    width: 30%;
+    width: 35%;
 }
 
 header h2 {
@@ -45,7 +46,7 @@ header h2 {
 }
 @media screen and (max-width: 600px) {
     header h2 {
-        font-size: 3vw;
+        font-size: 4vw;
     }}
 
 main {
@@ -68,7 +69,7 @@ main h1 {
 
 @media screen and (max-width: 600px) {
     main h1 {
-        font-size: 3vw;
+        font-size: 4vw;
     }}
 
 main .logori {
@@ -78,7 +79,7 @@ main .degrade {
     padding-top: 0px;
     margin: 30px 0px;
     color: var(--cor0);
-    background-image: linear-gradient(to right, var(--cor2), transparent);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
 }
 main p {
     font-family: var(--fonte-texto);
@@ -118,10 +119,9 @@ button a {
 }
 
 ul > li {
-    list-style-type: '\2714\00A0\00A0';
+    list-style-type: '\2714\00A0';
     list-style-position: inside;
     font-family: var(--fonte-texto);
-    text-align: justify;
     line-height: 1.5em;
     font-size: 1.1em;
     font-weight: lighter;
@@ -132,11 +132,15 @@ span {
 }
 
 main img {
-    width: 30%;
+    width: 35%;
     display: block;
     margin: auto; 
 }
 
+@media screen and (max-width: 600px) {
+    main img {
+        width: 50%;
+    }}
 aside {
     background-color: var(--cor0);
     padding: 10px;
@@ -155,7 +159,6 @@ aside > h1 {
     border-radius: 10px 10px 0px 0px;
 }
 aside > ul {
-    list-style-type: '\2714\00A0\00A0'; /* Código foi pego no emojipedia, somente os números. As barras depois é para dar espaço duas vezes */
     list-style-position: inside;
     columns: 2;
     line-height: 1.5em; /* Espaçamento entre linhas */
